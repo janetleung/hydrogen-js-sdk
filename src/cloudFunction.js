@@ -4,13 +4,14 @@ const HError = require('./HError')
 
 const API = BaaS._config.API
 
-const invokeFunction = (functionName, params) => {
+const invokeFunction = (functionName, params, sync=true) => {
   if (!functionName) {
     throw new HError(605)
   }
 
   let data = {
     function_name: functionName,
+    sync,
   }
 
   if (params) {
