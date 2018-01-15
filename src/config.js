@@ -37,6 +37,8 @@ const API = {
   DELETE_FILES: '/hserve/v1.3/uploaded-file/',
   FILE_CATEGORY_DETAIL: '/hserve/v1.3/file-category/:categoryID/',
   FILE_CATEGORY_LIST: '/hserve/v1.3/file-category/',
+
+  CLOUD_FUNCTION: '/hserve/v1/cloud-function/job/'
 }
 
 const methodMapList = [{
@@ -150,5 +152,5 @@ module.exports = {
   DEBUG: false,
   RANDOM_OPTION: RANDOM_OPTION,
   REQUEST_PARAMS_MAP: requestParamsMap,
-  VERSION: 'v1.1.4'
+  VERSION: 'v1.1.5'
 }
